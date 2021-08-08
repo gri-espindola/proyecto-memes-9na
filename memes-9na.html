@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./memes-9na.css">
+    <title>Document</title>
+</head>
+<body>
+        <!-- *****HEADER***** -->
+    <header class="">
+        <h1>Generador de memes</h1>
+        <nav>
+            <ul>
+                <li id="lista-imagen">
+                    <i class="fas fa-image">
+                        Imagen
+                    </i>
+                </li>
+                <li id="lista-texto">
+                    <i class="fas fa-font">
+                        Texto
+                    </i>
+                </li>
+                <li>   
+                    <label id="Label1" for="claroOscuro">
+                        <i class="fas fa-cloud-moon"></i> Modo nocturno</i>
+                    </label>
+                    <input type="checkbox" id="claroOscuro">
+                </li>
+            </ul>
+        </nav> 
+    </header>
+
+        <!--*****MAIN (IMG,ASIDE)*****-->
+    <main>
+        <section class="">
+            <div id="">
+                <article >
+                    <p id="topText" class="topbotText" >TOP TEXT</p> 
+                </article>
+                <article class="" id=""></article>
+            
+                <article>
+                    <p id="bottonText" class="topbotText">BOTTOM TEXT</p> 
+                </article>
+            </div>
+            <button class="download" id="">
+                <i class="fas fa-download" id="boton-descarga">Descargar meme</i>
+            </button>
+        </section>
+    </main>
+
+
+        <!--*****ASIDE*****-->
+        <aside class="aside" id="aside">
+            <button id="btn-menu" hidden>✖</button> 
+
+<!-- *******************FORMULARIO DE TEXTO*********************  -->
+
+        <form id="form-texto" class="class-form-txt" style="display: none;">
+            <h2 class="title-aside">TEXTO</h2>
+
+                <!--*********<texto superior>********-->
+                    <label for="top-input">Superior</label>
+                    <textarea 
+                        name="text" 
+                        id="top-input" 
+                        cols="30" 
+                        rows="2" 
+                        wrap="hard"
+                        spellcheck="true"
+                        style="resize: none;">
+                    </textarea>
+
+                <!--*********</Check sin texto superior>*******-->
+                <div>
+                    <input id="top-check" type="checkbox">
+                    <label for="top-check">Sin texto Superior</label>
+                </div>
+
+                <!--*********<texto inferior>*******-->
+                
+                    <label for="bot-input">Inferior</label>
+                    <textarea 
+                        name="text" 
+                        id="bot-input" 
+                        cols="30" 
+                        rows="2"
+                        wrap="hard"
+                        spellcheck="true">
+                    </textarea>
+
+                <!-- </check sin texto inferior> -->
+                <div>    
+                    <input id="bot-check" type="checkbox">
+                    <label for="bot-check">Sin texto Inferior</label>
+                </div>
+                <div>
+                    <label for="option">Fuente</label>
+                    <select name="option" id="option">
+                        <option value="select">Seleccionar</option>
+                        <option value="arial" style="font-family:arial">Arial</option>
+                        <option value="Arial Black" style="font-family: 'arial black';">Arial Black</option>
+                        <option value="jokerman" style="font-family:jokerman">Jokerman</option>
+                        <option value="monospace" style="font-family:monospace">Monospace</option>
+                        <option value="lucida handwriting" style="font-family:'lucida handwriting'">Lucida Handwriting</option>
+                        <option value="Impact" style="font-family:impact">Impact</option>
+                        <option value="comic sans ms" style="font-family:'comic sans ms'">Comic Sans</option>
+                        <option value="algerian" style="font-family:algerian">Algerian</option>
+                    </select>
+
+                    <label for="size">Tamaño</label>
+                    <input type="number" id="size" value="20" min="10" max="72">
+                </div>
+                <div class="div-fondo">    
+                    <input type="image" src="./img/iconos/Text-align-left-32.png" id="buttonLeft">
+                    <input type="image" src="./img/iconos/Text-align-center-32.png" id="buttonCenter">
+                    <input type="image" src="./img/iconos/Text-align-right-32.png" id="buttonRight">
+                </div>
+                <div>
+                    <label for="color">Color de Fuente</label>
+                        <input type="color" id="color" value="#000000">
+                        <span id="hex-color-texto">#000000</span><br>
+
+                    <label for="color">Color de Fondo</label>
+                    <input type="color" id="fondo" value="#FCF3B5">
+                    <span id="hex-color-fondo">#FCF3B5</span>
+                </div>
+                <div>
+                    <input type="checkbox" id="transparente">
+                    <label for="transparente">Fondo transparente</label>
+                </div>
+
+                <div>
+                    <label>Contorno</label>
+                    <button id="contornoNinguno" class="form-text-button">Ninguno</button>
+                    <button id="contornoClaro" class="form-text-button">Claro</button>
+                    <button id="contornoOscuro" class="form-text-button">Oscuro</button>
+                </div>
+                <div class="div-fondo">
+                    <label for="espaciado">Espaciado</label>
+                    <input type="number" id="espaciado" value="2" min="0" max="20">
+
+                    <label for="interlineado">interlineado</label>
+                    <select name="interlineado" id="interlineado">
+                        <option value="0.8">0.8</option>
+                        <option value="1.0">1.0</option>
+                        <option value="1.2">1.2</option>
+                        <option value="1.5">1.5</option>
+                        <option value="2.0">2.0</option>
+                    </select>
+                </div>
+            </form>
+
+            </div>
+
+<!-- Formulario de imagen -->
+
+            <form id="form-imagen" class="class-form-img">
+                <h2 class="title-aside">IMAGEN</h2>
+
+                <label for="url">URL</label>
+                <input type="url" id="url" value="">
+
+                <!-- <input type="file" > -->
+                <div class="div-fondo">
+                    <label for="fondo-imgMene">Fondo</label>
+                    <input type="color" id="fondo-imgMeme">
+                    <label for="efecto">Efecto</label>
+                    <select name="efecto" id="efecto">
+                        <option value="">Ninguno</option>
+                        <option value="lighten">Aclarar</option>
+                        <option value="darken">Oscurecer</option>
+                        <option value="difference">Diferencia</option>
+                        <option value="luminosity">Luminosidad</option>
+                        <option value="multiply">Multiplicar</option>                    
+                    </select>
+                </div>
+                <h3>Filtros</h3>
+                <label for="brillo">Brillo</label>
+                <input type="range" id="brillo" min="0" max="1" step=".1" value="1">
+
+                <label for="opacidad">Opacidad</label>
+                <input type="range" id="opacidad" min="0" max="1" step=".1" value="1">
+
+                <label for="contraste">Contraste</label>
+                <input type="range" id="contraste" min="100" max="1000" step="1" value="100">
+
+                <label for="desenfoque">Desenfoque</label>
+                <input type="range" id="desenfoque" min="0" max="10" step=".1" value="0">
+
+                <label for="escala">Escala de grises</label>
+                <input type="range" id="escala" min="0" max="100" step="1" value="0"> 
+
+                <label for="sepia">Sepia</label>
+                <input type="range" id="sepia" min="0" max="100" step="1" value="0">
+
+                <label for="hue">Hue</label>
+                <input type="range" id="hue" min="0" max="359" step="1" value="0">
+
+                <label for="saturado">Saturado</label>
+                <input type="range" id="saturado" min="100" max="1000" step="10" value="100">
+
+                <label for="negativo">Negativo</label>
+                <input type="range" id="negativo" min="0" max="1" step=".1" value="0">
+
+                <!-- <input type="reset" value="Restablecer filtos" id="boton-reset"> -->
+                <button id="boton-reset">Restablecer</button>
+            </form>
+        </aside>
+    </main>
+    
+
+    <script src="./memes-9na.js"></script>
+</body>
+</html>
